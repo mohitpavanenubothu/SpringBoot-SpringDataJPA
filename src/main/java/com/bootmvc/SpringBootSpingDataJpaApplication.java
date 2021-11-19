@@ -17,9 +17,11 @@ public class SpringBootSpingDataJpaApplication {
 		System.out.println("Spring get bean class name is:::"+bean.getClass().getName());
 
 		ContactsMasterEntity entity = new ContactsMasterEntity();
-		entity.setContactId(111);
-		entity.setContactName("SATYA");
-		entity.setContactNumber(9949443);
+		entity.setContactId(999);
+		entity.setContactName("Mohit");
+		entity.setContactNumber(701340);
+		
+		System.out.println("Save entity details"+entity);
 
 		bean.save(entity);
 		ctx.close();
